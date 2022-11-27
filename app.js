@@ -3,7 +3,7 @@ let formulario = document.querySelector("form");
 
 if (params == "ciclo") {
   formulario.innerHTML = `
-   <div class="mb-3 w-100">
+  <div class="mb-3 w-100">
       <label for="ciclo-codigo">Codigo de ciclo</label>
       <input type="text" class="form-control" id="ciclo-codigo" placeholder="Código del ciclo">
       <label for="ciclo-nombre" class="form-label">Nombre</label>
@@ -100,7 +100,7 @@ if (params == "ciclo") {
       <option value="1">1er Curso</option>
       <option value="2">2do Curso</option>
       </select>
-       <label for="ra-codigo">Código del RA</label>
+      <label for="ra-codigo">Código del RA</label>
       <input id="ra-codigo" class="form-control" placeholder="Codigo del RA">
       <label for="ra-titulo">Titulo del RA</label>
       <input id="ra-titulo" class="form-control" placeholder="Titulo del RA">
@@ -124,7 +124,7 @@ if (params == "ciclo") {
       <select id="ra-ce" class="form-select mb-2 mt-2">
       <option value="Selecciona un RA" selected>Selecciona un RA</option>
       </select>
-       <label for="ce-codigo">Código del criterio</label>
+      <label for="ce-codigo">Código del criterio</label>
       <input id="ce-codigo" class="form-control" placeholder="Codigo del criterio">
       <label for="ce-titulo">Titulo del criterio</label>
       <input id="ce-titulo" class="form-control" placeholder="Titulo del criterio">
@@ -135,4 +135,22 @@ if (params == "ciclo") {
   `;
 }
 
-formulario.addEventListener("submit", (event) => event.preventDefault());
+let div_ok = document.getElementById("ok_message");
+
+formulario.addEventListener("submit", (event) => {
+  //display de creacion de elemento
+  event.preventDefault();
+  let seleccion = document.querySelectorAll("input");
+  seleccion.forEach((campo) => {
+    if(!campo.value){
+      div_ok.textContent="No pueden haber campos vacíos"
+      div_ok.classList.replace("alert-success", "alert-danger");
+    }else{
+        div_ok.textContent="Creación correcta!";
+    }
+  })
+  div_ok.classList.remove("d-none");
+
+  //eliminar el display de creacion de elemento
+  setTimeout(() => {div_ok.classList.add("d-none")},2000);
+});

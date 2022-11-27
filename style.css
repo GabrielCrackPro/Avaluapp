@@ -17,3 +17,11 @@
 .nav-item {
   font-size: 15px;
 }
+
+h3{
+  text-align: center;
+}
+
+.container button{
+  font-size: 15vmin;
+}
