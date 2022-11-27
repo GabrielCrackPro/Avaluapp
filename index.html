@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Avaluapp, appweb de autevaluación para estudiantes de ESO, FP y
+      Bachillerato
+    </title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Avaluapp es una aplicación web de autoevaluación para estudiantes que incorpora el catálogo formatido nacional desde ESO, BAT y FP grado medio y superior."
+    />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-dark">
+    <div class="d-flex w-100 align-items-strech" style="height: 100vh">
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="bg-dark">
+        <div class="ms-2">
+          <h1 class="fs-5">
+            <a href="./index.html" class="link link-light text-decoration-none"
+              >AvaluApp</a
+            >
+          </h1>
+        </div>
+        <ul class="list-unstyled">
+          <li class="nav-item">
+            <a href="#" class="nav-link active"
+              ><i class="fa-solid fa-school"></i><br />Ciclo<br />Formativo</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-book"></i><br />
+              Módulo<br />Profesional</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-layer-group"></i><br />
+              Nivel</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-book-open"></i><br />Tema</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-file"></i><br />Actividad</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-graduation-cap"></i
+              ><br />Resultado<br />Aprendizaje</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-chalkboard-user"></i>
+              <br />Criterio<br />Evaluación</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button
+            type="button"
+            id="sidebarCollapse"
+            class="btn btn-primary me-5"
+          >
+            <i class="fas fa-align-left"></i>
+            <span>Menu</span>
+          </button>
+          <div class="dropdown">
+            <a
+              class="btn btn-primary dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-plus"></i>
+              Añadir
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./formulario.html?crear=ciclo">Ciclo Formativo</a></li>
+              <li><a class="dropdown-item" href="./formulario.html?crear=modulo">Módulo Profesional</a></li>
+              <li><a class="dropdown-item" href="./formulario.html?crear=nivel">Nivel</a></li>
+              <li><a class="dropdown-item" href="./formulario.html?crear=tema">Tema</a></li>
+              <li><a class="dropdown-item" href="./formulario.html?crear=actividad">Actividad</a></li>
+              <li>
+                <a class="dropdown-item" href="./formulario.html?crear=ra">Resultado Aprendizaje</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./formulario.html?crear=ce">Criterio de Evaluación</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+          <form class="d-flex">
+            <input
+              type="text"
+              class="form-control bg-dark text-white"
+              id="buscador"
+              placeholder="Buscador"
+            />
+            <input type="submit" class="btn btn-primary" value="Buscar" />
+          </form>
+          <div class="container mt-2 ms-2">
+            <div class="col">
+              <div class="row">
+                <div class="card bg-dark text-white" style="width: 25rem">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">DAW</h5>
+                    <h6 class="card-title text-center">
+                      Desarrollo de Aplicaciones<br />Web
+                    </h6>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm d-flex flex-column">
+                          <h2>1º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Bases de Datos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Entornos de Desarrollo</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Lenguaje de Marcas</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Programación</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Sistemas Informáticos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Inglés Técnico</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Formación y Orientación Laboral</a
+                          >
+                        </div>
+                        <div class="col-sm d-flex flex-column">
+                          <h2>2º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Desarrollo Web Servidor</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Desarrollo Web Cliente</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="./detalle.html?clase=modulo"
+                            >Desarrollo de Interfaces</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Despliegue de Aplicaciones Web</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Inglés Técnico</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Empresa e iniciativa emprendedora</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 25rem">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">DAM</h5>
+                    <h6 class="card-title text-center">
+                      Desarrollo de Aplicaciones Multiplataforma
+                    </h6>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm d-flex flex-column">
+                          <h2>1º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Bases de Datos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Entornos de Desarrollo</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Lenguaje de Marcas</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Programación</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Sistemas Informáticos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Inglés Técnico</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Formación y Orientación Laboral</a
+                          >
+                        </div>
+                        <div class="col-sm d-flex flex-column">
+                          <h2>2º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Acceso a datos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Programación multimedia y dispositivos móviles</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Programación de servicios y procesos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Desarrollo de interfaces</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Sistemas de gestión empresarial</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Empresa e iniciativa emprendedora</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Inglés Técnico</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 25rem">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">ASIR</h5>
+                    <h6 class="card-title text-center">
+                      Administración de Sistemas Informáticos en Red
+                    </h6>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm d-flex flex-column">
+                          <h2>1º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Implantación de sistemas operativos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Planificación y administración de redes</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Fundamentos de hardware</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Gestión de bases de datos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Lenguajes de marcas y sistemas de gestión de
+                            información</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Administración de sistemas operativos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Servicios de red e Internet</a
+                          >
+                        </div>
+                        <div class="col-sm d-flex flex-column">
+                          <h2>2º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Implantación de aplicaciones web</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Administración de sistemas gestores de bases de
+                            datos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Seguridad y alta disponibilidad</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Proyecto de administración de sistemas informáticos
+                            en red</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Formación y orientación laboral</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Empresa e iniciativa emprendedora</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Formación en centros de trabajo</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 25rem">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">SMR</h5>
+                    <h6 class="card-title text-center">
+                      Sistemas Microinformáticos<br />y Redes
+                    </h6>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm d-flex flex-column">
+                          <h2>1º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Montaje y mantenimiento de equipo</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Sistemas operativos monopuesto</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Aplicaciones ofimáticas</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Sistemas operativos en red</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Redes locales</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Seguridad informática</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Formación y orientación laboral</a
+                          >
+                        </div>
+                        <div class="col-sm d-flex flex-column">
+                          <h2>2º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Servicios en red</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Aplicaciones web</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Empresa e iniciativa empresarial</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Bases de Datos</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Lenguajes de Marcas</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Inglés Técnico</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Formación en centros de trabajo</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 25rem">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">ECETI</h5>
+                    <h6 class="card-title text-center">
+                      Especialización en Ciberseguridad en Entornos de las
+                      Tecnologías de la Información
+                    </h6>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm d-flex flex-column">
+                          <h2>1º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Incidentes de ciberseguridad</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Bastionado de redes y sistemas</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Puesta en producción segura</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Análisis forense informático</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Hacking ético</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Normativa de ciberseguridad</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card bg-dark text-white" style="width: 25rem">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">EIABD</h5>
+                    <h6 class="card-title text-center">
+                      Especialización en Inteligencia Artificial y Big Data<br /><br />
+                    </h6>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm d-flex flex-column">
+                          <h2>1º</h2>
+                          <a class="btn btn-outline-primary btn-sm" href="#"
+                            >Modelos de Inteligencia Artificial</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Sistemas de aprendizaje automático</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Programación de Inteligencia Artificial</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Sistemas de Big Data</a
+                          >
+                          <a
+                            class="btn btn-outline-primary btn-sm mt-2"
+                            href="#"
+                            >Big Data aplicado</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c8c2d49169.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      const collpaseButton = document.querySelector("#sidebarCollapse");
+      const sidebar = document.querySelector("#sidebar");
+      collpaseButton.addEventListener("click", () =>
+        sidebar.classList.toggle("s-active")
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+#sidebar {
+  min-width: 99px;
+  max-width: 99px;
+  color: #fff;
+  transition: margin-left 0.3s;
+}
+
+#sidebar.s-active {
+  margin-left: -110px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+.nav-item {
+  font-size: 15px;
+}
+
+h3{
+  text-align: center;
+}
+
+.container button{
+  font-size: 15vmin;
+}
+
+.accordion-item, .accordion-item h2{
+  background: #212529;
+  color: #fff;
+}
